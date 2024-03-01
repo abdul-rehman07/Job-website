@@ -19,7 +19,7 @@
       #list {
         display: flex;
         list-style: none;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         padding-left: 150px;
       }
       .items {
@@ -36,6 +36,35 @@
         padding-right: 120px;
         padding-left: 50px;
       }
+      .items a:hover {
+        color: red;
+      }
+      .dropdown {
+        display: block;
+        position: absolute;
+        margin-left: 0.3cm;
+      }
+      ul li:hover .dropdown {
+        display: block;
+        background-color: black;
+        color: white;
+        margin-top: 9px;
+        padding: 0px;
+        margin-left: 0.27cm;
+      }
+      .dropdown ul li {
+        list-style: none;
+        padding: 12px;
+      }
+      .dropdown ul {
+        padding: 12px;
+      }
+      .dropdown {
+        display: none;
+      }
+      .dropdown > ul > li:hover {
+        color: blue;
+      }
     </style>
   </head>
   <body>
@@ -47,7 +76,18 @@
         <li class="items"><a href="#">Blog</a></li>
         <li class="items"><a href="#">Govt Jobs</a></li>
         <li class="items"><a href="#">Private Jobs</a></li>
-        <li class="items"><a href="#">Testing Services</a></li>
+        <li class="items">
+          <a href="#"
+            >Testing Services
+            <div class="dropdown">
+              <ul>
+                <li class="boxes">working</li>
+                <li class="boxes">NTS</li>
+                <li class="boxes">PTS</li>
+              </ul>
+            </div>
+          </a>
+        </li>
         <li class="items"><a href="#">Regions</a></li>
         <li class="items"><a href="#">City</a></li>
         <li class="items"><a href="#">PakArmy</a></li>
