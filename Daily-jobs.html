@@ -65,6 +65,23 @@
       .dropdown > ul > li:hover {
         color: blue;
       }
+      .main-container {
+        display: grid;
+        grid-template-columns: 5fr 2fr;
+        grid-gap: var(--global-xl-spacing);
+        justify-content: center;
+      }
+      .heading h2 {
+        text-align: center;
+        margin: 33px;
+        font-size: 30px;
+      }
+      .right-side{
+        border: 2px solid black;
+        height: 300px;
+        width: 300px;
+        background-color: orange;
+      }
     </style>
   </head>
   <body>
@@ -93,5 +110,29 @@
         <li class="items"><a href="#">PakArmy</a></li>
       </ul>
     </nav>
+    <div class="main-container">
+      <div class="lift-side">
+        <div class="heading"><h2>Latest Jobs Today</h2></div>
+
+        <div class="latest-job-box">
+          <article class="boxes-article">
+            <div class="job-left-box">
+              <div class="job-thumbnail-front">
+                <a href="https://dailyjobs.pk/central-power-purchasing-agency-cppa-jobs-2024/"><img src="https://dailyjobs.pk/wp-content/uploads/2022/01/CPPA.png" class="wp-post-image" alt="Central Power Purchasing Agency (CPPA) Jobs 2024 "></a></div>
+        <div class="job-title-front">
+          <h2 class="job-title">
+            <a href="https://dailyjobs.pk/central-power-purchasing-agency-cppa-jobs-2024/">Central Power Purchasing Agency (CPPA) Jobs 2024</a>
+          </h2>
+        </div>
+
+
+
+            <div class="job-right-box"></div>
+          </article>
+        </div>
+      </div>
+      <div class="right-side">Side bar</div>
+    </div>
   </body>
 </html>
+<!-- grid-template-columns: 5fr 2fr; -->
