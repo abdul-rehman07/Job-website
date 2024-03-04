@@ -11,6 +11,7 @@
         margin: 0px;
         font-family: "Blinker", sans-serif;
       }
+
       #navbar {
         display: flex;
         background-color: wheat;
@@ -22,28 +23,34 @@
         font-size: 1.1rem;
         padding-left: 150px;
       }
+
       .items {
         margin: auto;
       }
+
       .items a {
         text-decoration: none;
         padding: 10px;
         color: black;
       }
+
       img {
         padding: 20px;
         width: 200px;
         padding-right: 120px;
         padding-left: 50px;
       }
+
       .items a:hover {
-        color: red;
+        color: rgb(255, 149, 149);
       }
+
       .dropdown {
         display: block;
         position: absolute;
         margin-left: 0.3cm;
       }
+
       ul li:hover .dropdown {
         display: block;
         background-color: black;
@@ -52,38 +59,79 @@
         padding: 0px;
         margin-left: 0.27cm;
       }
+
       .dropdown ul li {
         list-style: none;
         padding: 12px;
       }
+
       .dropdown ul {
         padding: 12px;
       }
+
       .dropdown {
         display: none;
       }
+
       .dropdown > ul > li:hover {
         color: blue;
       }
+
       .main-container {
         display: grid;
         grid-template-columns: 5fr 2fr;
         grid-gap: var(--global-xl-spacing);
         justify-content: center;
       }
+
       .heading h2 {
         text-align: center;
         margin: 33px;
         font-size: 30px;
       }
-      .right-side{
+
+      .lift-side {
+        padding: 0px 60px 0px 60px;
+      }
+      .right-side {
         border: 2px solid black;
         height: 300px;
-        width: 300px;
+        width: 375px;
         background-color: orange;
+      }
+      .job-thumbnail-front img {
+        width: 55px;
+        padding: 20px;
+        padding-top: 0px;
+      }
+      .job-left-box {
+        display: flex;
+        border-radius: 8px;
+        border: 2px solid black;
+      }
+      .job-title-front {
+        font-size: 12px;
+        margin-right: 195px;
+      }
+      .para-3 {
+        padding-top: 15px;
+      }
+      .job-right-box {
+        margin: auto;
+        border-left: 2px solid black;
+        padding: 5px;
+        text-align: center;
+      }
+      .para-1 {
+        font-size: 12px;
+      }
+      .para-2 {
+        padding-top: 10px;
+        font-size: 12px;
       }
     </style>
   </head>
+
   <body>
     <nav id="navbar">
       <div class="logo"><img src="logoweb.png" alt="" /></div>
@@ -112,27 +160,29 @@
     </nav>
     <div class="main-container">
       <div class="lift-side">
-        <div class="heading"><h2>Latest Jobs Today</h2></div>
-
-        <div class="latest-job-box">
-          <article class="boxes-article">
-            <div class="job-left-box">
-              <div class="job-thumbnail-front">
-                <a href="https://dailyjobs.pk/central-power-purchasing-agency-cppa-jobs-2024/"><img src="https://dailyjobs.pk/wp-content/uploads/2022/01/CPPA.png" class="wp-post-image" alt="Central Power Purchasing Agency (CPPA) Jobs 2024 "></a></div>
-        <div class="job-title-front">
-          <h2 class="job-title">
-            <a href="https://dailyjobs.pk/central-power-purchasing-agency-cppa-jobs-2024/">Central Power Purchasing Agency (CPPA) Jobs 2024</a>
-          </h2>
+        <div class="heading">
+          <h2>Latest Jobs Today</h2>
         </div>
+        <div class="latest-job-box">
+          <div class="job-left-box">
+            <div class="job-thumbnail-front">
+              <img src="CPPA.png" />
+            </div>
+            <div class="job-title-front">
+              <h2 class="job-title">
+                Central Power Purchasing Agency (CPPA) Jobs 2024
+              </h2>
+              <p class="para-3">Assistant Manager</p>
+            </div>
 
-
-
-            <div class="job-right-box"></div>
-          </article>
+            <div class="job-right-box">
+              <div class="para-1">Last Date:</div>
+              <div class="para-2">5th February</div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="right-side">Side bar</div>
     </div>
   </body>
 </html>
-<!-- grid-template-columns: 5fr 2fr; -->
