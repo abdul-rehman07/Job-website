@@ -27,8 +27,8 @@
       #list {
         display: flex;
         list-style: none;
-        font-size: 1.1rem;
-        padding-left: 150px;
+        font-size: 16px;
+        padding-left: 200px;
       }
 
       .items {
@@ -38,7 +38,7 @@
       .items a {
         text-decoration: none;
         padding: 10px;
-        color: black;
+        color: #464646;
       }
 
       img {
@@ -100,17 +100,19 @@
         text-align: center;
         margin: 33px;
         font-size: 30px;
+        margin-bottom: 38px;
       }
 
       .lift-side {
-        padding: 0px 60px 0px 60px;
+        padding: 20px 75px 0px 60px;
       }
       .right-side {
         /* border: 1px solid rgb(53, 52, 52); */
         /* height: 300px;
         width: 375px; */
         /* background-color: orange; */
-        margin: 0px 10px 0px 0px;
+        margin: 100px 65px 0px 0px;
+        text-align: center;
       }
       .job-thumbnail-front img {
         width: 55px;
@@ -179,6 +181,26 @@
       .para-8 {
         padding-left: 5px;
       }
+      .search-style {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+      }
+      input {
+        border-radius: 4px;
+        border: 1px solid #818181;
+      }
+      .img-logo {
+        width: 20px;
+        padding: 0px;
+        margin: 10px;
+        position: absolute;
+        right: 65px;
+      }
+
+      .field {
+        display: flex;
+      }
     </style>
   </head>
 
@@ -242,7 +264,15 @@
         </div>
       </div>
 
-      <div class="right-side">Side bar</div>
+      <div class="right-side">
+        <div class="search-box">
+          <div class="field">
+            <label for="search"></label>
+            <input type="text" class="search-style" placeholder="Search ..." />
+            <img class="img-logo" src="search-zoom-fit-64.webp" alt="" />
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
