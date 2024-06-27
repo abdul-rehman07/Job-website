@@ -125,6 +125,7 @@
   .job-title-front {
     font-size: 12px;
     margin-right: 195px;
+    border: 2px solid black;
   }
   .job-right-box {
     margin: auto;
@@ -243,4 +244,7 @@
   }
   .google-play {
     margin-bottom: 25px;
+  }
+  #dummy{
+    border: 2px solid black;
   }
