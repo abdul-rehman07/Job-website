@@ -103,14 +103,16 @@
     padding: 20px 75px 0px 60px;
   }
   .right-side {
-    /* border: 1px solid rgb(53, 52, 52); */
+    border: 1px solid rgb(53, 52, 52);
     /* height: 300px;
     width: 375px; */
-    /* background-color: orange; */
+    background-color: orange;
+    display: inline-block;
     margin: 100px 65px 0px 0px;
     text-align: center;
   }
-  .job-thumbnail-front img {
+ 
+  .job-thumnail-front{
     width: 55px;
     padding: 20px;
     padding-top: 10px;
@@ -183,6 +185,7 @@
     padding: 10px;
     font-size: 16px;
   }
+  
   input {
     border-radius: 3px;
     border: 1px solid #d5d2d2;
