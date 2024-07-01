@@ -133,6 +133,7 @@
     border: 2px solid black;
     border-radius: 18px;
     width: 900px;
+    display: inline-flex;
   }
   .job-right-box {
     border-left: 2px solid black;
@@ -145,12 +146,12 @@
     font-size: 15px;
     /* padding: 20px 0px 18px 0px; */
     color: blue;
-    top: -33px;
+    /* top: -33px; */
     position: relative;
     display: inline-block;
   }
   .location {
-    display: flex;
+    /* display: flex; */
     padding-bottom: 7px;
     font-size: 10px;
   }
@@ -190,7 +191,7 @@
   }
   .para-8 {
     padding-left: 5px;
-    padding-right: 220px;
+    padding-right: 50px;
   }
   .search-style {
     width: 100%;
@@ -265,4 +266,7 @@
   #dummy{
     /* border: 2px solid black; */
     width: 762px;
+  }
+  .inner-div{
+
   }
