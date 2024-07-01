@@ -54,28 +54,28 @@ function customdiv(element) {
   jobtitles.appendChild(locational);
 
   // it is left side of changing
-  const rightside = document.createElement("div");
-  rightside.classList.add("job-right-box");
+  // const rightside = document.createElement("div");
+  // rightside.classList.add("job-right-box");
 
-  const p5 = document.createElement("div");
-  p5.classList.add("para-1");
-  const last = document.createTextNode("Last Date :");
-  p5.appendChild(last);
+  // const p5 = document.createElement("div");
+  // p5.classList.add("para-1");
+  // const last = document.createTextNode("Last Date :");
+  // p5.appendChild(last);
 
-  const p6 = document.createElement("div");
-  p6.classList.add("para-2");
-  const lastdate = document.createTextNode(element.city);
-  p6.appendChild(lastdate);
+  // const p6 = document.createElement("div");
+  // p6.classList.add("para-2");
+  // const lastdate = document.createTextNode(element.city);
+  // p6.appendChild(lastdate);
 
-  const p7 = document.createElement("div");
-  p7.classList.add("para-4");
-  const applyview = document.createTextNode("view & apply");
-  p7.appendChild(applyview);
+  // const p7 = document.createElement("div");
+  // p7.classList.add("para-4");
+  // const applyview = document.createTextNode("view & apply");
+  // p7.appendChild(applyview);
 
-  rightside.appendChild(p5);
-  rightside.appendChild(p6);
-  rightside.appendChild(p7);
-  locational.appendChild(rightside);
+  // rightside.appendChild(p5);
+  // rightside.appendChild(p6);
+  // rightside.appendChild(p7);
+  // locational.appendChild(rightside);
 }
 
 // }
