@@ -1,0 +1,459 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latest Jobs in Pakistan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+  </head>
+  <style>
+    * {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Blinker", sans-serif;
+  }
+
+  #navbar {
+    display: flex;
+    background-color: white;
+  }
+
+  #list {
+    display: flex;
+    list-style: none;
+    font-size: 16px;
+    padding-left: 200px;
+  }
+
+  .items {
+    margin: auto;
+  }
+
+  .items a {
+    text-decoration: none;
+    padding: 10px;
+    color: #464646;
+  }
+
+  .logo-img {
+    padding: 20px;
+    width: 200px;
+    padding-right: 120px;
+    padding-left: 50px;
+  }
+
+  .items a:hover {
+    color: rgb(103, 45, 211);
+  }
+
+  .dropdown {
+    display: block;
+    position: absolute;
+    margin-left: 0.3cm;
+  }
+
+  ul li:hover .dropdown {
+    display: block;
+    background-color: rgb(51, 50, 50);
+    color: white;
+    margin-top: 9px;
+    padding: 5px;
+    margin-left: 0.27cm;
+    z-index: 9;
+  }
+
+  ul li:hover .angle {
+    transform: rotate(180deg);
+  }
+
+  /* .angle :hover {
+  } */
+  .angle {
+    display: inline-block;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  .dropdown ul li {
+    list-style: none;
+    padding: 12px;
+  }
+
+  .dropdown ul {
+    padding: 12px;
+  }
+
+  .dropdown > ul > li:hover {
+    color: blue;
+  }
+
+  .main-container {
+    display: grid;
+    grid-template-columns: 4.5fr 2fr;
+    grid-gap: var(--global-xl-spacing);
+    justify-content: center;
+    background-color: rgb(241 252 255);
+  }
+  .bothside{
+    display: flex;
+  }
+  .latest-job-box {
+    background-color: white;
+    margin: 30px 0px;
+  }
+
+  .heading h2 {
+    text-align: center;
+    margin: 33px;
+    font-size: 30px;
+    margin-bottom: 38px;
+  }
+
+  .lift-side {
+    padding: 20px 75px 0px 60px;
+    /* display: flex; */
+  }
+  .right-side {
+    width: 375px;
+    /* background-color: orange; */
+    display: inline-block;
+    /* text-align: center; */
+    margin-left: 200px;/
+  }
+ 
+  .job-thumnail-front{
+    width: 55px;
+    /* padding: 20px; */
+    padding-top: 10px;
+    padding-left: 10px;
+    
+  }
+  .job-left-box {
+    display: flex;
+    border-radius: 8px;
+    border: 1px solid rgb(191 183 183);
+    padding: 0px 4px 3px 4px;
+  }
+  .job-title-front {
+    background-color: white;
+    font-size: 12px;
+    margin: 0px 0px 18px 50px;
+    border: 2px solid rgb(202, 202, 202);
+    border-radius: 9px;
+    width: 805px;
+    display: inline-flex;
+  }
+  .job-right-box {
+    border-left: 2px solid black;
+    /* padding: 8px; */
+    text-align: center;
+    margin-left: 20px;
+    margin-bottom: 2px;
+    padding-top: 11px;
+    padding-left: 10px;
+  }
+  .job-title {
+    font-size: 15px;
+    padding: 20px 0px 18px 0px;
+    color: blue;
+   
+  }
+  .location {
+    display: inline-flex;
+    padding-bottom: 10px;
+    font-size: 10px;
+  }
+
+  /* section {
+    border: 2px solid black;
+} */
+  .fa-solid {
+    color: blue;
+    padding-left: 12px;
+    font-size: 11px;
+  }
+  .para-1 {
+    font-size: 12px;
+    font-weight: bold;
+    color: #8f8c8c;
+  }
+  .para-2 {
+    padding-top: 9px;
+    padding-bottom: 16px;
+    font-size: 12px;
+    color: red;
+    font-weight: bold;
+  }
+  .para-3 {
+    margin-bottom: 10px;
+    /* padding-left: 85px; */
+  }
+  .para-4 a {
+    font-size: 12px;
+    padding-left: 12px;
+  }
+  .para-5 {
+    font-weight: bold;
+    /* padding-left: 85px; */
+  }
+  .para-6 {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #109003;
+    font-weight: bold;
+  }
+  .para-8 {
+    padding-left: 5px;
+    /* padding-right: 50px; */
+  }
+  .search-style {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid rgb(134, 132, 132);
+    margin-bottom: 7px;
+  }
+  
+  input {
+    border-radius: 3px;
+    border: 1px solid #d5d2d2;
+  }
+  .img-boxing .fa {
+    width: 20px;
+    padding: 0px;
+    margin: 14px 10px 10px 10px;
+    position: absolute;
+    right: 100px;
+    cursor: pointer;
+    color: rgb(168 164 164);
+    font-size: 19px;
+  }
+  .img-boxing :hover {
+    color: black;
+  }
+
+  .field {
+    display: flex;
+  }
+  .update-styling {
+    text-align: left;
+    font-size: 21px;
+    margin-bottom: 25px;
+    /* margin-left: 18px; */
+  }
+  .search-box {
+    margin-bottom: 25px;
+  }
+  .center-text {
+    color: #343131;
+    margin-bottom: 4px;
+  }
+  .gov-job {
+    text-align: left;
+    font-size: 19px;
+    margin-bottom: 15px;
+  }
+  .img-left {
+    text-align: left;
+    margin-bottom: 20px;
+    
+  }
+  .new-jobs {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  .para-hover {
+    text-align: left;
+    margin-bottom: 25px;
+  }
+  .hover:hover {
+    color: #7777d4;
+    text-decoration: underline;
+  }
+  .hover {
+    list-style: none;
+    line-height: 175%;
+    font-size: 18px;
+  }
+  .google-play {
+    margin-bottom: 25px;
+  }
+  #dummy{
+    /* border: 2px solid black; */
+    width: 762px;
+  }
+  /* .inner-div{
+    margin-right: 350px;
+  } */
+  .job-thumnail-front{
+    grid-area: lefti;
+  }
+  .inner-div{
+    grid-area: midlle;
+  }
+  .job-right-box{
+    grid-area: righti;
+  }
+  .job-title-front{
+    display: grid;
+    grid-template-areas: 'lefti midlle middle middle m m m r r righti';
+  }
+  </style>
+
+  <body>
+    <nav id="navbar">
+      <div class="logo"><img class="logo-img" src="logoweb.png" alt="" /></div>
+
+      <ul id="list">
+        <li class="items"><a href="#">Home</a></li>
+        <li class="items"><a href="#">Blog</a></li>
+        <li class="items"><a href="#">Govt Jobs</a></li>
+        <li class="items"><a href="#">Private Jobs</a></li>
+        <li class="items">
+          <a href="#"
+            >Testing Services
+            <div class="angle">
+              <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="dropdown">
+              <ul>
+                <li class="boxes">working</li>
+                <li class="boxes">NTS</li>
+                <li class="boxes">PTS</li>
+              </ul>
+            </div>
+          </a>
+        </li>
+        <li class="items">
+          <a href="#"
+            >Regions
+            <div class="angle">
+              <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="dropdown">
+              <ul>
+                <li class="boxes">working</li>
+                <li class="boxes">NTS</li>
+                <li class="boxes">PTS</li>
+              </ul>
+            </div>
+          </a>
+        </li>
+        <li class="items">
+          <a href="#"
+            >City
+            <div class="angle">
+              <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="dropdown">
+              <ul>
+                <li class="boxes">working</li>
+                <li class="boxes">NTS</li>
+                <li class="boxes">PTS</li>
+              </ul>
+            </div>
+          </a>
+        </li>
+        <li class="items">
+          <a href="#"
+            >PakArmy
+            <div class="angle">
+              <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="dropdown">
+              <ul>
+                <li class="boxes">working</li>
+                <li class="boxes">NTS</li>
+                <li class="boxes">PTS</li>
+              </ul>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="main-container">
+      <div class="lift-side">
+        <div class="heading">
+          <h2>Latest Jobs Today</h2>
+        </div>
+
+  
+      <div class="bothside">
+
+  
+      <div id="dummy"></div>
+      <div class="right-side">
+        <div class="search-box">
+          <div class="field">
+            <label for="search"></label>
+            <input type="text" class="search-style" placeholder="Search ..." />
+            <div class="img-boxing">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <section>
+          <h2 class="update-styling">GET DAILY UPDATES ON YOUR MOBILE</h2>
+          <div class="text-wedget">
+            <h3 class="center-text">Install Jobs news Alert App:</h3>
+            <img class="google-play" src="google-play-store.png" alt="" />
+          </div>
+        </section>
+
+        <div class="gov-styling">
+          <h2 class="gov-job">LATEST GOVERMENTS JOBS</h2>
+          <div class="img-left">
+            <img src="Goverments jobs Pakistan.jpg" alt="" class="gov" />
+          </div>
+        </div>
+
+        <div>
+          <h2 class="new-jobs">NEW JOBS</h2>
+        </div>
+
+        <ul class="para-hover">
+          <li class="hover">
+            Central Power Purchasing Agency (CPPA) Jobs 2024
+          </li>
+          <li class="hover">
+            Project Management Unit (PMU) World Bank Project Jobs 2024
+          </li>
+          <li class="hover">Public Sector Organization Jobs 2024</li>
+          <li class="hover">Donor Funded Project Jobs 2023</li>
+          <li class="hover">Sui Southern Gas Company Limited Jobs 2023</li>
+        </ul>
+
+        <div>
+          <h2 class="new-jobs">ARCHIVES</h2>
+        </div>
+
+        <ul class="para-hover">
+          <li class="hover"><p>January 2024</p></li>
+          <li class="hover">December 2023</li>
+          <li class="hover">November 2023</li>
+          <li class="hover">October 2023</li>
+          <li class="hover">September 2023</li>
+          <li class="hover">August 2023</li>
+          <li class="hover">July 2023</li>
+          <li class="hover">June 2023</li>
+          <li class="hover">May 2023</li>
+          <li class="hover">April 2023</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </body>
+  <script src="./jobs.js"></script>
+</html>

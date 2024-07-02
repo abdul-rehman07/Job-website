@@ -17,7 +17,12 @@ function customdiv(element) {
   const h2 = document.createElement("h2");
   h2.classList.add("job-title");
   const titles = document.createTextNode(element.title);
-  h2.appendChild(titles);
+
+  var ahref = document.createElement("a");
+  ahref.href = "file:///d%3A/Job%20website/details.html";
+
+  ahref.appendChild(titles);
+  h2.appendChild(ahref);
 
   const p1 = document.createElement("p");
   p1.classList.add("para-3");
@@ -67,7 +72,7 @@ function customdiv(element) {
 
   const p6 = document.createElement("div");
   p6.classList.add("para-2");
-  const lastdate = document.createTextNode(element.city);
+  const lastdate = document.createTextNode(element.lastdate);
   p6.appendChild(lastdate);
 
   const p7 = document.createElement("div");
