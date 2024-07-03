@@ -19,7 +19,7 @@ function customdiv(element) {
   const titles = document.createTextNode(element.title);
 
   var ahref = document.createElement("a");
-  ahref.href = "file:///d%3A/Job%20website/details.html";
+  ahref.href = "details.html";
 
   ahref.appendChild(titles);
   h2.appendChild(ahref);
