@@ -498,7 +498,6 @@
 
   function anotherdiv(response) {
 
-
     const home_back = document.getElementById("home_back");
     const home_span = document.createElement("span");
     home_span.classList.add("homespan");
@@ -519,19 +518,20 @@
     home_back.appendChild(title_span);
 
   }
-  fetch("https://6674243575872d0e0a95448f.mockapi.io/v1/mkjg")
+
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get('id');
+  console.log(id, "get id is")
+  fetch(`https://6674243575872d0e0a95448f.mockapi.io/v1/mkjg/${id}`)
     .then((response) => {
       return response.json();
     })
     .then((response) => {
-      // function run() {
-      // response.forEach((element) => {
       anotherdiv(response);
-      // });
-      // }
-      // run();
+
     })
     .catch((error) => console.log(error));
+
 
 </script>
 
