@@ -292,3 +292,6 @@
     display: grid;
     grid-template-areas: 'lefti midlle middle middle m m m r r righti';
   }
+  .h1_header{
+    width: max-content;
+  }
