@@ -18,6 +18,7 @@
 
 .items {
   margin: auto;
+  margin-left: 15px;
 }
 
 .items a {
@@ -85,7 +86,7 @@ ul li:hover .angle {
   grid-template-columns: 4.5fr 2fr;
   grid-gap: var(--global-xl-spacing);
   justify-content: center;
-  background-color: rgb(241 252 255);
+  background-color: whitesmoke;
 }
 
 .bothside {
@@ -345,7 +346,7 @@ input {
 }
 
 #nav {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .title-span {
@@ -367,12 +368,13 @@ input {
 }
 
 .gender_class a {
-  background: blue;
+  font-size: 13px;
+  background: #6666ff;
   color: white;
   padding: 0.25rem;
   border-radius: 0.25rem;
   margin-right: .5rem;
-  margin-bottom: .5rem;
+  margin-bottom: 1.0rem;
   display: inline-block;
   line-height: 1.2;
   text-transform: uppercase;
@@ -388,7 +390,7 @@ input {
 }
 
 .strong_class {
-  font-size: 20px;
+  font-size: 18px;
 
 }
 
@@ -402,9 +404,42 @@ input {
   color: red;
 }
 .tr_table{
-  background-color: rgb(164, 164, 255);
+  background-color: #ebf3fb;
 }
 .tdd1{
   width: 630px;
-  /* border-collapse: collapse; */
+}
+.table{
+  border-collapse: collapse;
+}
+.job-title a{
+  text-decoration: none;
+  color: blue;
+}
+
+table tr td {
+  border-bottom: 1px solid #e6e6e6;
+}
+.homespan a {
+  color: rgb(104, 103, 103);
+}
+.para_name{
+  width: 826px;
+  line-height: 1.6;
+}
+.last-para-date{
+  font-size: 20px;
+  color: red;
+}
+.last-title{
+  font-size: 17px;
+}
+.last-title2{
+  font-size: 17px;
+}
+.para_details{
+  font-size: 19px;
+}
+.para_post{
+  font-size: 17px;
 }

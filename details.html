@@ -237,7 +237,7 @@
 
     const kpk_a = document.createElement("a");
     kpk_a.href = "index.html";
-    kpk_text = document.createTextNode("KPKjobs");
+    kpk_text = document.createTextNode("KPK jobs");
     kpk_a.appendChild(kpk_text);
     gender_span.appendChild(kpk_a);
 
@@ -391,6 +391,48 @@
     td_ss5.appendChild(td_ss5text);
     tr_5table.appendChild(td_ss5);
 
+
+    const paragraph_div = document.createElement("div");
+    paragraph_div.classList.add("para_div");
+
+    const para_name = document.createElement("p");
+    para_name.classList.add("para_name");
+
+    const para_last_date = document.createElement("strong");
+    para_last_date.classList.add("last-para-date");
+    const last_data = document.createTextNode("Last Date to Apply is " + response.lastdate);
+    para_last_date.appendChild(last_data);
+    para_name.appendChild(para_last_date);
+    paragraph_div.appendChild(para_name);
+    head_div.appendChild(paragraph_div);
+
+
+
+    const para_title = document.createElement("strong");
+    para_title.classList.add("last-title");
+    const para_title_value = document.createTextNode(" for " + response.title + ' jobs.');
+
+    para_title.appendChild(para_title_value);
+    para_name.appendChild(para_title);
+
+    const para_title2 = document.createElement("strong");
+    para_title2.classList.add("last-title2");
+    const para_title2_value = document.createTextNode(response.title);
+    const br = document.createElement("br");
+    para_title2.appendChild(br);
+    para_title2.appendChild(para_title2_value);
+    para_name.appendChild(para_title2);
+
+    const otherpara_detail = document.createElement("span");
+    otherpara_detail.classList.add("para_details");
+    const para_detail_data = document.createTextNode(" required well educated , discipline ,experienced and hard work candidates.Applicant must have minimum education of Ph.D , Masters , MS , MPhil , B.Sc.These Jobs are Available Only For Mardan City pakistan. University of Engineering and Technology Mardan is Looking For Candidates For the following posts which are ");
+    otherpara_detail.appendChild(para_detail_data);
+    para_name.appendChild(otherpara_detail);
+    const para_post = document.createElement("strong");
+    para_post.classList.add("para_post");
+    const para_post_data = document.createTextNode(response.post + ".");
+    para_post.appendChild(para_post_data);
+    para_name.appendChild(para_post);
 
   }
 
