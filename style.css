@@ -359,7 +359,7 @@ input {
 }
 
 .lift-angle {
-  padding: 70px 75px 0px 60px;
+  padding: 75px 75px 0px 60px;
 
 }
 
@@ -442,4 +442,58 @@ table tr td {
 }
 .para_post{
   font-size: 17px;
+}
+.para_div{
+  margin-top: 25px;
+}
+.title_h2{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+.page_h3  {
+  text-align: center;
+  margin-top: 22px;
+  margin-bottom: 12px;
+}
+.page_h3 a{
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+.page_h3 :hover {
+color: rgb(58, 89, 148);
+}
+
+
+.img_data_div img{
+  width: 845px;
+}
+.div_name_value{
+  text-align: center;
+    color: #d71515;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.span_post_name{
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+.h4_post_name{
+  background-color: #f1f1ff;
+  padding: 8px;
+  border: 1px solid rgb(190 190 190);
+}
+.ul_post{
+  line-height: 1.6;
+  margin-left: 45px;
+  margin-bottom: 20px;
+  margin-top: 12px;
+}
+
+.li_1{
+  font-size: 18px;
 }

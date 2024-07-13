@@ -434,6 +434,94 @@
     para_post.appendChild(para_post_data);
     para_name.appendChild(para_post);
 
+
+
+    const tilte_h2 = document.createElement("h2");
+    tilte_h2.classList.add("title_h2");
+    const title_h2_data = document.createTextNode(response.title + "vacancies details:");
+    tilte_h2.appendChild(title_h2_data);
+    head_div.appendChild(tilte_h2);
+
+
+    const page_h3 = document.createElement("h3");
+    page_h3.classList.add("page_h3");
+    const page_a = document.createElement("a");
+    page_a.href = "jobdetails.png";
+    const a_page_data = document.createTextNode("Click Here to View or Download Full Image");
+    page_a.appendChild(a_page_data);
+    page_h3.appendChild(page_a);
+    head_div.appendChild(page_h3);
+
+    const img_data_div = document.createElement("div");
+    img_data_div.classList.add("img_data_div");
+    const img_data = document.createElement("img");
+    img_data.src = "jobdetails.png";
+    img_data_div.appendChild(img_data);
+    head_div.appendChild(img_data_div);
+
+    const div_name_value = document.createElement("div");
+    div_name_value.classList.add("div_name_value");
+    const value_date = document.createElement("strong");
+    value_date.classList.add("value-date");
+    const value_data = document.createTextNode("Last Date to Apply is: " + response.lastdate);
+    value_date.appendChild(value_data);
+    div_name_value.appendChild(value_date);
+    head_div.appendChild(div_name_value);
+
+    const h4_post_name = document.createElement("h4");
+    h4_post_name.classList.add("h4_post_name");
+
+    const span_post_name = document.createElement("span");
+    span_post_name.classList.add("span_post_name");
+
+    const post_data = document.createTextNode("Name of Posts:");
+    span_post_name.appendChild(post_data);
+    h4_post_name.appendChild(span_post_name);
+    head_div.appendChild(h4_post_name);
+
+    const ul_post = document.createElement("ul");
+    ul_post.classList.add("ul_post");
+
+    const li_1 = document.createElement("li");
+    li_1.classList.add("li_1");
+    const li1_data = document.createTextNode(response.post + " 1");
+
+    const li_2 = document.createElement("li");
+    li_2.classList.add("li_1");
+    const li2_data = document.createTextNode(response.post + " 2");
+    const li_3 = document.createElement("li");
+    li_3.classList.add("li_1");
+    const li3_data = document.createTextNode(response.post + " 3");
+
+    li_1.appendChild(li1_data);
+    li_2.appendChild(li2_data);
+    li_3.appendChild(li3_data);
+    ul_post.appendChild(li_1);
+    ul_post.appendChild(li_2);
+    ul_post.appendChild(li_3);
+    head_div.appendChild(ul_post);
+
+
+    const h4_apply = document.createElement("h4");
+    h4_apply.classList.add("h4_post_name");
+
+    const span_apply = document.createElement("span");
+    span_apply.classList.add("span_post_name");
+
+    const post_apply = document.createTextNode("How to Apply:");
+    span_apply.appendChild(post_apply);
+    h4_apply.appendChild(span_apply);
+    head_div.appendChild(h4_apply);
+
+    const ul_apply = document.createElement("ul");
+    ul_apply.classList.add("ul_post");
+
+    const li_apply = document.createElement("li");
+    li_apply.classList.add("li_1");
+    const li1_apply = document.createTextNode("You will find Job Application full details in Above Image.");
+    li_apply.appendChild(li1_apply);
+    ul_apply.appendChild(li_apply);
+    head_div.appendChild(ul_apply);
   }
 
   const params = new URLSearchParams(window.location.search);
