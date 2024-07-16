@@ -497,3 +497,25 @@ color: rgb(58, 89, 148);
 .li_1{
   font-size: 18px;
 }
+.tab_ul{
+  display: flex;
+}
+
+.tab_li{
+  list-style-type: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.tabs_main_div{
+  border-bottom: 1px solid rgb(156, 156, 156);
+}
+.active{
+  display: block;
+}
+.tab_li:active{
+  background-color: #18ec00;
+  transform: 0.9s;
+}
+.sect_{
+  display: none;
+}

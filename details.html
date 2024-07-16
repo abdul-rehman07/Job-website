@@ -101,7 +101,19 @@
             </header>
           </div>
         </div>
+
         <!-- <div id="dummy"></div> -->
+
+
+
+
+
+
+
+
+
+
+
 
         <div class="right-side right-angle">
           <div class="search-box">
@@ -166,6 +178,25 @@
         </div>
       </div>
     </div>
+
+    <!-- <div class="div_new">
+      <ul class="new_ul">
+        <li class="new_li">auther</li>
+        <li class="new_li">post data</li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <div class="data">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus vitae enim possimus, error
+        voluptate quis unde illum, molestias minima, obcaecati voluptas suscipit mollitia hic provident quibusdam!
+        Eveniet expedita nobis atque?</div>
+      <div class="data">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus vitae enim possimus, error
+        voluptate quis unde illum, molestias minima, obcaecati voluptas suscipit mollitia hic provident quibusdam!
+        Eveniet expedita nobis atque?</div>
+    </div> -->
+
+
+
 </body>
 <script>
 
@@ -522,6 +553,73 @@
     li_apply.appendChild(li1_apply);
     ul_apply.appendChild(li_apply);
     head_div.appendChild(ul_apply);
+
+
+
+
+
+
+
+
+
+    const tabs_main_div = document.createElement("div");
+    tabs_main_div.classList.add("tabs_main_div");
+
+    const tab_ul = document.createElement("ul");
+    tab_ul.classList.add("tab_ul");
+
+    const tab_li1 = document.createElement("li");
+    tab_li1.classList.add("tab_li");
+    const tab_li1_data = document.createTextNode("Author");
+
+    tab_li1.appendChild(tab_li1_data);
+    tab_ul.appendChild(tab_li1);
+    tabs_main_div.appendChild(tab_ul);
+    head_div.appendChild(tabs_main_div);
+
+
+    const tab_li2 = document.createElement("li");
+    tab_li2.classList.add("tab_li");
+    const tab_li2_data = document.createTextNode("Recent Posts");
+    tab_li2.appendChild(tab_li2_data);
+    tab_ul.appendChild(tab_li2);
+
+
+
+    const sect_div = document.createElement("div");
+    sect_div.classList.add("sect_div");
+
+    const sect_1 = document.createElement("section");
+    sect_1.classList.add("sect_");
+    const sect_1_data = document.createTextNode("Abdul Rehman kiyani");
+    sect_1.appendChild(sect_1_data);
+    sect_div.appendChild(sect_1);
+    head_div.appendChild(sect_div);
+
+    const sect_2 = document.createElement("section");
+    sect_2.classList.add("sect_");
+    const sect_2_data = document.createTextNode("Post by Abdul Rehman kiyani");
+    sect_2.appendChild(sect_2_data);
+    sect_div.appendChild(sect_2);
+
+    ul.forEach((tab, index) => {
+      ul.addEventListener('click', (e) => {
+        ul.forEach(tab => {
+          ul.classList.remove("active")
+        });
+        tab.classList.add("active");
+
+        sect_div.forEach(sect => { sect.classList.remove('active') });
+        sect_div[index].classList.add("active");
+
+
+
+
+
+      })
+
+    });
+
   }
 
   const params = new URLSearchParams(window.location.search);
