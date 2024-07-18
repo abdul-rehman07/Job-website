@@ -97,13 +97,13 @@
                 <div id="home_back">
 
                 </div>
+
               </nav>
             </header>
           </div>
         </div>
 
         <!-- <div id="dummy"></div> -->
-
 
 
 
@@ -601,16 +601,24 @@
     const sect_2_data = document.createTextNode("Post by Abdul Rehman kiyani");
     sect_2.appendChild(sect_2_data);
     sect_div.appendChild(sect_2);
+    const arrayObj = document.querySelectorAll(".tab_li");
 
-    ul.forEach((tab, index) => {
-      ul.addEventListener('click', (e) => {
-        ul.forEach(tab => {
-          ul.classList.remove("active")
+    const arraydetails = document.querySelectorAll(".sect_");
+    console.log(arraydetails);
+
+    console.log(arrayObj);
+
+
+    arrayObj.forEach((tab, index) => {
+      tab.addEventListener('click', (e) => {
+        arrayObj.forEach(tab => {
+          tab.classList.remove("active")
         });
         tab.classList.add("active");
 
-        sect_div.forEach(sect => { sect.classList.remove('active') });
-        sect_div[index].classList.add("active");
+
+        arraydetails.forEach(sect => { sect.classList.remove('active') });
+        arraydetails[index].classList.add("active");
 
 
 
@@ -624,7 +632,6 @@
 
   const params = new URLSearchParams(window.location.search);
   const id = params.get('id');
-  console.log(id, "get id is")
   fetch(`https://6674243575872d0e0a95448f.mockapi.io/v1/mkjg/${id}`)
     .then((response) => {
       return response.json();

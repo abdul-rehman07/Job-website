@@ -514,8 +514,10 @@ color: rgb(58, 89, 148);
 }
 .tab_li:active{
   background-color: #18ec00;
-  transform: 0.9s;
 }
 .sect_{
   display: none;
+}
+.sect_.active {
+  display: block;
 }
