@@ -590,16 +590,52 @@
     sect_div.classList.add("sect_div");
 
     const sect_1 = document.createElement("section");
-    sect_1.classList.add("sect_");
+    sect_1.classList.add("sect_", "namee_sect");
+
+
+    const no_img_icon = document.createElement("div");//adding no img icon
+    no_img_icon.classList.add("no_img_icon", "namee_sect");
+    const no_img_data = document.createElement("img");
+    no_img_data.src = "download.png";
+    no_img_icon.appendChild(no_img_data);
+    sect_1.appendChild(no_img_icon);
+
+    const auther_name_div = document.createElement("div");
+    auther_name_div.classList.add("auther_name_div");
+
+
+    const auther_a = document.createElement("a");
+    auther_a.href = "index.html";
+
     const sect_1_data = document.createTextNode("Abdul Rehman kiyani");
-    sect_1.appendChild(sect_1_data);
+    auther_a.appendChild(sect_1_data);
+    auther_name_div.appendChild(auther_a)
+    sect_1.appendChild(auther_name_div);
     sect_div.appendChild(sect_1);
     head_div.appendChild(sect_div);
 
     const sect_2 = document.createElement("section");
     sect_2.classList.add("sect_");
+
+    const no_img_icon2 = document.createElement("div");//adding no img icon
+    no_img_icon2.classList.add("no_img_icon");
+    const no_img_data2 = document.createElement("img");
+    no_img_data2.src = "CPPA.png";
+    no_img_icon2.appendChild(no_img_data2);
+    sect_2.appendChild(no_img_icon2);
+
+
+    const post_name_div = document.createElement("div");
+    post_name_div.classList.add("post_name_div");
+
+
+    const post_a = document.createElement("a");
+    post_a.href = "index.html";
+
     const sect_2_data = document.createTextNode("Post by Abdul Rehman kiyani");
-    sect_2.appendChild(sect_2_data);
+    post_a.appendChild(sect_2_data);
+    post_name_div.appendChild(post_a);
+    sect_2.appendChild(post_name_div);
     sect_div.appendChild(sect_2);
     const arrayObj = document.querySelectorAll(".tab_li");
 
@@ -617,8 +653,8 @@
         tab.classList.add("active");
 
 
-        arraydetails.forEach(sect => { sect.classList.remove('active') });
-        arraydetails[index].classList.add("active");
+        arraydetails.forEach(sect => { sect.classList.remove('active', 'namee_sect', 'no_img_icon') });
+        arraydetails[index].classList.add("active", "no_img_icon");
 
 
 

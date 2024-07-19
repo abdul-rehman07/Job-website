@@ -519,5 +519,24 @@ color: rgb(58, 89, 148);
   display: none;
 }
 .sect_.active {
+  /* display: block; */
+  display: flex;
+}
+.namee_sect{
+  display: block !important;
+}
+.namee_sect img{
   display: block;
+}
+.no_img_icon img{
+  width: 85px;
+  border-radius: 50px;
+  margin-top: 20px;
+  /* float: left !important; */
+}
+.no_img_icon{
+  display: block;
+}
+.sect_div{
+  border-bottom: 2px solid red;
 }
